@@ -12,20 +12,43 @@
             </a>
 
             <flux:navlist variant="outline">
-                <flux:navlist.group :heading="__('Platform')" class="grid">
-                    <flux:navlist.item icon="home" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>{{ __('Dashboard') }}</flux:navlist.item>
+                <flux:navlist.group :heading="__('Menu')" class="grid">
+
+                    <flux:navlist.item
+                        icon="newspaper"
+                        href=""
+                        current="request()->routeIs('news')"
+                        wire:navigate>{{ __('News') }}
+                    </flux:navlist.item>
+
+                    <flux:navlist.item
+                        icon="home"
+                        href=""
+                        current="request()->routeIs('retreats')"
+                        wire:navigate>{{ __('Retreats') }}
+                    </flux:navlist.item>
+
+                    <flux:navlist.item
+                        icon="calendar-days"
+                        href=""
+                        current="request()->routeIs('events')"
+                        wire:navigate>{{ __('Events') }}
+                    </flux:navlist.item>
+
                 </flux:navlist.group>
             </flux:navlist>
 
             <flux:spacer />
 
             <flux:navlist variant="outline">
-                <flux:navlist.item icon="folder-git-2" href="https://github.com/laravel/livewire-starter-kit" target="_blank">
-                {{ __('Repository') }}
+
+
+                <flux:navlist.item icon="folder-git-2" href="route('terms')" target="_blank">
+                {{ __('Terms of Service') }}
                 </flux:navlist.item>
 
-                <flux:navlist.item icon="book-open-text" href="https://laravel.com/docs/starter-kits" target="_blank">
-                {{ __('Documentation') }}
+                <flux:navlist.item icon="book-open-text" href="route('privacy')" target="_blank">
+                {{ __('Privacy Policy') }}
                 </flux:navlist.item>
             </flux:navlist>
 

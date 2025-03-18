@@ -20,25 +20,61 @@
             <flux:spacer />
 
             <flux:navbar class="mr-1.5 space-x-0.5 py-0!">
-                <flux:tooltip :content="__('Search')" position="bottom">
-                    <flux:navbar.item class="!h-10 [&>div>svg]:size-5" icon="magnifying-glass" href="#" :label="__('Search')" />
-                </flux:tooltip>
-                <flux:tooltip :content="__('Repository')" position="bottom">
+                <!--
+                <flux:tooltip :content="__('Search')" position="top">
+                    <flux:navbar.item
+                        class="!h-10 [&>div>svg]:size-5"
+                        icon="magnifying-glass"
+                        href="#"
+                        :label="__('Search')" />
+                </flux:tooltip> -->
+
+                <flux:tooltip :content="__('News')" position="top">
                     <flux:navbar.item
                         class="h-10 max-lg:hidden [&>div>svg]:size-5"
                         icon="folder-git-2"
-                        href="https://github.com/laravel/livewire-starter-kit"
+                        href=""
                         target="_blank"
-                        :label="__('Repository')"
+                        :label="__('News')"
                     />
                 </flux:tooltip>
-                <flux:tooltip :content="__('Documentation')" position="bottom">
+
+                <flux:tooltip :content="__('Retreats')" position="top">
+                    <flux:navbar.item
+                        class="h-10 max-lg:hidden [&>div>svg]:size-5"
+                        icon="folder-git-2"
+                        href=""
+                        target="_blank"
+                        :label="__('Retreats')"
+                    />
+                </flux:tooltip>
+
+                <flux:tooltip :content="__('Events')" position="top">
+                    <flux:navbar.item
+                        class="h-10 max-lg:hidden [&>div>svg]:size-5"
+                        icon="folder-git-2"
+                        href=""
+                        target="_blank"
+                        :label="__('Events')"
+                    />
+                </flux:tooltip>
+
+                <flux:tooltip :content="__('Terms of Service')" position="bottom">
+                    <flux:navbar.item
+                        class="h-10 max-lg:hidden [&>div>svg]:size-5"
+                        icon="folder-git-2"
+                        href=""
+                        target="_blank"
+                        :label="__('Terms of Service')"
+                    />
+                </flux:tooltip>
+                <flux:tooltip :content="__('Privacy Policy')" position="bottom">
                     <flux:navbar.item
                         class="h-10 max-lg:hidden [&>div>svg]:size-5"
                         icon="book-open-text"
-                        href="https://laravel.com/docs/starter-kits"
+                        href=""
                         target="_blank"
-                        label="Documentation"
+                        label="Privacy Policy"
                     />
                 </flux:tooltip>
             </flux:navbar>
@@ -107,12 +143,25 @@
             <flux:spacer />
 
             <flux:navlist variant="outline">
-                <flux:navlist.item icon="folder-git-2" href="https://github.com/laravel/livewire-starter-kit" target="_blank">
-                {{ __('Repository') }}
+
+                <flux:navlist.item icon="folder-git-2" href="" target="_blank">
+                    {{ __('News') }}
                 </flux:navlist.item>
 
-                <flux:navlist.item icon="book-open-text" href="https://laravel.com/docs/starter-kits" target="_blank">
-                {{ __('Documentation') }}
+                <flux:navlist.item icon="folder-git-2" href="" target="_blank">
+                    {{ __('Retreats') }}
+                </flux:navlist.item>
+
+                <flux:navlist.item icon="folder-git-2" href="" target="_blank">
+                    {{ __('Events') }}
+                </flux:navlist.item>
+
+                <flux:navlist.item icon="folder-git-2" href="" target="_blank">
+                {{ __('Terms of Service') }}
+                </flux:navlist.item>
+
+                <flux:navlist.item icon="book-open-text" href="" target="_blank">
+                {{ __('Privacy Policy') }}
                 </flux:navlist.item>
             </flux:navlist>
         </flux:sidebar>
