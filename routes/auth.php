@@ -27,6 +27,11 @@ Route::middleware('auth')->group(function () {
         ->middleware(['signed', 'throttle:6,1'])
         ->name('verification.verify');
 
+    Route::post('email/verification-notification', [VerifyEmailController::class, 'resend'])
+        ->middleware(['throttle:6,1'])
+        ->name('verification.resend');
+
+
     Volt::route('confirm-password', 'auth.confirm-password')
         ->name('password.confirm');
 });
