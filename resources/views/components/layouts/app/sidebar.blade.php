@@ -43,11 +43,11 @@
             <flux:navlist variant="outline">
 
 
-                <flux:navlist.item icon="folder-git-2" href="route('terms')" target="_blank">
+                <flux:navlist.item icon="folder-git-2" href="{{route('terms')}}" target="_blank">
                 {{ __('Terms of Service') }}
                 </flux:navlist.item>
 
-                <flux:navlist.item icon="book-open-text" href="route('privacy')" target="_blank">
+                <flux:navlist.item icon="book-open-text" href="{{route('privacy')}}" target="_blank">
                 {{ __('Privacy Policy') }}
                 </flux:navlist.item>
             </flux:navlist>
