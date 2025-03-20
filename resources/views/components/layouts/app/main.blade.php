@@ -3,9 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Laravel</title>
-
+    @yield('title')
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
@@ -55,8 +53,9 @@
         <p>&copy; {{ date('Y') }} Homeward Bound Adirondacks. All rights reserved.</p>
         <div class="mt-4">
             <nav class="flex justify-center space-x-4">
-                <a href="{{ route('terms') }}" class="text-blue-600 underline" target="_blank">Terms of Service</a>
-                <a href="{{ route('privacy') }}" class="text-blue-600 underline" target="_blank">Privacy Policy</a>
+                <a href="{{ route('terms') }}" class="text-blue-600 underline">Terms of Service</a>
+                <a href="{{ route('privacy') }}" class="text-blue-600 underline">Privacy Policy</a>
+                <a href="{{ route('contact') }}" class="text-blue-600 underline">Contact Us</a>
             </nav>
         </div>
     </div>

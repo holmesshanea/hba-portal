@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 
@@ -14,6 +15,12 @@ Route::get('/terms', function () {
 Route::get('/privacy', function () {
     return view('privacy');
 })->name('privacy');
+
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
+
+Route::post('/contact/send', [ContactController::class, 'send'])->name('contact.send');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])

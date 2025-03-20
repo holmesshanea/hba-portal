@@ -1,4 +1,7 @@
 @extends('components.layouts.app.main')
+@section('title')
+    <title>Terms of Service</title>
+@endsection
 @section('content')
     <div class="bg-white shadow-md rounded-lg p-4 flex items-start space-x-8">
 

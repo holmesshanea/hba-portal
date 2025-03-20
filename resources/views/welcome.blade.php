@@ -1,4 +1,8 @@
 @extends('components.layouts.app.main')
+@section('title')
+    <title>Welcome</title>
+@endsection
+
 @section('content')
                 <div class="text-[13px] leading-[20px] flex-1 p-6 pb-12 lg:p-20 bg-white dark:bg-[#161615] dark:text-[#EDEDEC]">
                  <div class="mb-6">
