@@ -43,6 +43,10 @@
             <flux:navlist variant="outline">
 
 
+                <flux:navlist.item icon="home" href="{{route('home')}}">
+                    {{ __('Home') }}
+                </flux:navlist.item>
+
                 <flux:navlist.item icon="folder-git-2" href="{{route('terms')}}">
                 {{ __('Terms of Service') }}
                 </flux:navlist.item>
@@ -51,7 +55,7 @@
                 {{ __('Privacy Policy') }}
                 </flux:navlist.item>
 
-                <flux:navlist.item icon="book-open-text" href="{{route('contact')}}">
+                <flux:navlist.item icon="envelope" href="{{route('contact')}}">
                     {{ __('Contact Us') }}
                 </flux:navlist.item>
 

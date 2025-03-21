@@ -93,7 +93,7 @@
                     <!-- Cancel Button -->
                     <a
                         href="{{ route('home') }}"
-                        class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        class="inline-block px-5 py-1.5 dark:text-[#EDEDEC] text-[#1b1b18] border border-transparent hover:border-[#19140035] dark:hover:border-[#3E3E3A] rounded-sm text-sm leading-normal"
                     >
                         Cancel
                     </a>

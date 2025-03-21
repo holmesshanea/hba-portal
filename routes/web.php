@@ -26,6 +26,10 @@ Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
 
+Route::view('admin', 'admin.admin')
+    ->middleware(['auth', 'verified', 'admin']) // Add the 'admin' middleware to check roles
+    ->name('admin');
+
 Route::middleware(['auth'])->group(function () {
     Route::redirect('settings', 'settings/profile');
 
